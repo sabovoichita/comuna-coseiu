@@ -4,7 +4,7 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container {
-  background: linear-gradient(135deg, hsl(151, 79%, 23%), hsl(45, 94%, 51%));
+  /* background: linear-gradient(135deg, hsl(151, 79%, 23%), hsl(45, 94%, 51%)); */
   color: white;
   padding: 10px;
 }
@@ -16,8 +16,16 @@ h2 {
 }
 .header {
   display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  min-height: 120px;
+  background: linear-gradient(135deg, hsl(151, 79%, 23%), hsl(45, 94%, 51%));
+  padding: 5px;
 }
-
+.header-info {
+  padding: 10px;
+}
 .logo {
   border: 2px solid white;
   border-radius: 50%;
@@ -30,4 +38,50 @@ h2 {
   width: 200px;
   z-index: 0;
   border-radius: 50%;
+}
+
+.header-top-menu-bar {
+  text-align: center;
+  background-color: #0c693c;
+  color: rgb(248, 189, 13);
+  margin: 0;
+  padding: 2px;
+}
+.header-top-menu-bar ul {
+  padding-inline-start: 0px;
+  margin: 0px;
+}
+
+.header-top-menu-bar li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.header-top-menu-bar a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.header-top-menu-bar a:visited {
+  color: white;
+}
+
+.header-top-menu-bar a.active {
+  color: #0c693c;
+  background: rgb(248, 189, 13);
+}
+.header-top-menu-bar a:hover {
+  font-size: 16px;
+  background-color: rgb(248, 189, 13);
+  color: #0c693c;
+  border-bottom: 2px solid #0c693c;
+  border-right: 2px solid #0c693c;
 }
