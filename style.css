@@ -1,0 +1,16 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  background-color: rgb(38, 117, 91);
+  color: white;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
