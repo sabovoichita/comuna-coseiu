@@ -27,7 +27,8 @@ function createMainLayout() {
         <li><a href ="#">Galerie Foto</a></li> 
         </ul>
       </div>
-    <div class = "main"></div>
+    <div class = "main">
+    <h2>Istoria Comunei</h2></div>
   </div>
 `;
 }
