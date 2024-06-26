@@ -4,10 +4,18 @@ function $(selector) {
 
 function createMainLayout() {
   return `
-  <div class = "container">
-  <h1>Comuna Coșeiu</h1>
-  <h2>Bine ați venit!</h2>
-  </div>`;
+  <div class ="container">
+    <div class ="header">
+      <div class ="logo">
+          <img src ="./images/logo.png">
+        </div>
+      <div class = "header-info">
+          <h1>Comuna Coșeiu</h1>
+          <h2>Bine ați venit!</h2>
+        </div>
+    </div>
+  </div>
+`;
 }
 
 function initEvents() {

@@ -4,7 +4,7 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container {
-  background-color: rgb(38, 117, 91);
+  background: linear-gradient(135deg, hsl(151, 79%, 23%), hsl(45, 94%, 51%));
   color: white;
   padding: 10px;
 }
@@ -13,4 +13,21 @@ h1 {
 }
 h2 {
   text-align: center;
+}
+.header {
+  display: flex;
+}
+
+.logo {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+.logo img {
+  height: 200px;
+  width: 200px;
+  z-index: 0;
+  border-radius: 50%;
 }
