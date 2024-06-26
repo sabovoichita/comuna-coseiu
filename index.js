@@ -17,7 +17,6 @@ function createMainLayout() {
     <div class = "header-top-menu-bar">
         <ul>
         <li><a href ="#">Istorie</a></li> |
-        <li><a href ="#">Biserici</a></li> |
         <li><a href ="#">Producatori</a></li> |
         <li><a href ="#">Evenimente</a></li> |
         <li><a href ="#">Cazare</a></li> |
