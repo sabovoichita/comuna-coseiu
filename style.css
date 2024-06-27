@@ -1,11 +1,43 @@
+:root {
+  --dark-color: hsl(263, 11%, 24%);
+  --lighter-color: hsl(239, 89%, 32%);
+  --lighter1-color: hsl(232, 64%, 54%);
+  --lighter2-color: hsl(219, 47%, 80%);
+  --lighter3-color: hsl(77, 100%, 97%);
+
+  --light1: hsl(199, 64%, 73%);
+  --light2: hsl(192, 70%, 43%);
+  --light3: hsl(200, 95%, 14%);
+  --light4: hsl(43, 100%, 51%);
+  --light5: hsl(32, 100%, 49%);
+
+  --option1: hsl(300, 7%, 3%);
+  --option2: hsl(222, 100%, 61%);
+  --option3: hsl(356, 74%, 52%);
+  --option4: hsl(44, 98%, 62%);
+  --option5: hsl(120, 4%, 91%);
+
+  --col1: #000814;
+  --col2: #001d3d;
+  --col3: #003566;
+  --col4: #ffc300;
+  --col5: #ffd60a;
+}
 html {
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* background: url(images/20210803_085701.jpg); */
 }
-.container {
-  /* background: linear-gradient(135deg, hsl(151, 79%, 23%), hsl(45, 94%, 51%)); */
-  color: white;
+.main {
+  display: block;
+  background: linear-gradient(
+    to right,
+    var(--option2),
+    var(--option3),
+    var(--option4)
+  );
+  color: var(--option5);
   padding: 10px;
 }
 h1 {
@@ -20,7 +52,13 @@ h2 {
   position: relative;
   align-items: center;
   min-height: 120px;
-  background: linear-gradient(135deg, hsl(151, 79%, 51%), hsl(45, 94%, 23%));
+  background: linear-gradient(
+    to left,
+    var(--option2),
+    var(--option4),
+    var(--option3)
+  );
+  color: var(--option5);
   padding: 5px;
 }
 .header-info {
@@ -42,10 +80,10 @@ h2 {
 
 .header-top-menu-bar {
   text-align: center;
-  background-color: #0c693c;
-  color: rgb(248, 189, 13);
+  background: var(--option2);
+  color: var(--option5);
   margin: 0;
-  padding: 2px;
+  padding: 5px 10px;
 }
 .header-top-menu-bar ul {
   padding-inline-start: 0px;
@@ -64,27 +102,31 @@ h2 {
   font-size: 10px;
   font-weight: 600;
   position: relative;
-  color: white;
+  color: var(--option5);
   padding: 5px 0px;
   border-radius: 4px;
   transition: 0.5s;
 }
 
 .header-top-menu-bar a:visited {
-  color: white;
+  color: var(--option5);
 }
-
-.header-top-menu-bar a.active {
-  color: #0c693c;
-  background: rgb(248, 189, 13);
-}
-.header-top-menu-bar a:hover {
+.header-top-menu-bar a:hover,
+.header-top-menu-bar a:focus {
   font-size: 10px;
-  background-color: rgb(248, 189, 13);
-  color: #0c693c;
+  background-color: var(--option5);
+  color: var(--option1);
   border-bottom: 2px solid #0c693c;
   border-right: 2px solid #0c693c;
 }
+.header-top-menu-bar a.active {
+  color: var(--option1);
+  background: var(--option5);
+}
+.hide {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   html,
   body {
@@ -93,8 +135,7 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .container {
-    /* background: linear-gradient(135deg, hsl(151, 79%, 23%), hsl(45, 94%, 51%)); */
-    color: white;
+    color: var(--option5);
     padding: 10px;
   }
   h1 {
@@ -109,8 +150,13 @@ h2 {
     position: relative;
     align-items: center;
     min-height: 120px;
-    background: linear-gradient(135deg, hsl(151, 79%, 51%), hsl(45, 94%, 23%));
     padding: 5px;
+    background: linear-gradient(
+      to left,
+      var(--option2),
+      var(--option4),
+      var(--option3)
+    );
   }
   .header-info {
     padding: 10px;
@@ -137,8 +183,8 @@ h2 {
 
   .header-top-menu-bar {
     text-align: center;
-    background-color: #0c693c;
-    color: rgb(248, 189, 13);
+    background: var(--option2);
+    color: var(--option5);
     margin: 0;
     padding: 2px 0px;
   }
@@ -155,28 +201,32 @@ h2 {
 
   .header-top-menu-bar a {
     text-decoration: none;
+    color: var(--option5);
     font-size: 10px;
     font-weight: 600;
     position: relative;
-    color: white;
-    padding: 5px 3px;
+    padding: 5px 4px;
+    margin: 2px;
     border-radius: 4px;
     transition: 0.5s;
   }
 
   .header-top-menu-bar a:visited {
-    color: white;
-  }
-
-  .header-top-menu-bar a.active {
-    color: #0c693c;
-    background: rgb(248, 189, 13);
+    color: var(--option5);
   }
   .header-top-menu-bar a:hover {
     font-size: 10px;
-    background-color: rgb(248, 189, 13);
-    color: #0c693c;
-    border-bottom: 2px solid #0c693c;
-    border-right: 2px solid #0c693c;
+    color: var(--option1);
+    background-color: var(--option5);
+    border-bottom: 2px solid var(--option1);
+    border-right: 2px solid var(--option1);
+  }
+  .header-top-menu-bar a.active {
+    color: var(--option1);
+    background: var(--option5);
+  }
+
+  .hide {
+    display: none;
   }
 }

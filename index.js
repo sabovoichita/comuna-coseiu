@@ -26,7 +26,7 @@ function createMainLayout() {
         <li><a href ="#">Galerie</a></li> 
         </ul>
       </div>
-    <div class = "main">
+    <div class = "main hide">
     <h2>Istoria Comunei</h2></div>
   </div>
 `;
