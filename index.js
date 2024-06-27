@@ -14,8 +14,8 @@ function createMainLayout() {
           <h2>Bine ați venit!</h2>
         </div>
     </div>
-    <div class = "header-top-menu-bar">
-        <ul>
+     <div class="menu-bar">
+        <ul class="header-top-menu-bar">
         <li><a href ="#">Istorie</a></li> |
         <li><a href ="#">Producatori</a></li> |
         <li><a href ="#">Evenimente</a></li> |
