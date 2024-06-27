@@ -27,8 +27,15 @@ function createMainLayout() {
         </ul>
       </div>
     <div class = "main hide">
-    <h2>Istoria Comunei</h2></div>
-  </div>
+      <h2>Galerie Foto</h2></div>
+      <div class="foto">
+        <img src="images/20190111_082942.jpg" >
+        <img src="images/20190106_120941a.jpg" >
+        <img src="images/20181221_093455a.jpg" >
+        <img src="images/20190111_082940.jpg" >
+        <img src="images/20210803_085701.jpg" >
+      </div>
+    </div>
 `;
 }
 

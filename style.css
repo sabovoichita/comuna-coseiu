@@ -30,15 +30,10 @@ html {
   /* background: url(images/20210803_085701.jpg); */
 }
 .main {
-  display: block;
-  background: linear-gradient(
-    to right,
-    var(--option2),
-    var(--option3),
-    var(--option4)
-  );
+  /* display: block; */
+  background: var(--option1);
   color: var(--option5);
-  padding: 10px;
+  /* padding: 10px; */
 }
 h1 {
   text-align: center;
@@ -135,8 +130,8 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .container {
-    color: var(--option5);
-    padding: 10px;
+    /* color: var(--option5); */
+    /* padding: 2px; */
   }
   h1 {
     text-align: center;
@@ -226,7 +221,31 @@ h2 {
     background: var(--option5);
   }
 
-  .hide {
-    display: none;
+  .main {
+    background: var(--option1);
+    color: var(--option5);
+    width: 400px;
+  }
+  .foto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    background: linear-gradient(
+      45deg,
+      var(--option2),
+      var(--option4),
+      var(--option3)
+    );
+    /* position: relative; */
+  }
+  .foto img {
+    max-height: 200px;
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    border: 1px solid var(--option5);
+    border-radius: 15px;
+    object-fit: cover;
   }
 }
