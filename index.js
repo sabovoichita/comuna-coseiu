@@ -7,7 +7,7 @@ function createMainLayout() {
   <div class ="container">
     <div class ="header">
       <div class ="logo">
-          <img src ="./images/logo.png">
+          <img src ="./images/logo-blue.png">
         </div>
       <div class = "header-info">
           <h1>Vizit Coșeiu</h1>
