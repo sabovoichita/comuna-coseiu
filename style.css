@@ -178,10 +178,16 @@ h2 {
   display: none;
 }
 
-.istorieContent {
-  background-color: rgb(238, 208, 208);
+.content h1 {
   display: block;
-  align-content: space-around;
+  text-align: justify;
+  padding: 5px;
+}
+
+.content p {
+  background-color: rgb(238, 231, 231);
+  display: block;
+  text-align: justify;
   padding: 5px;
 }
 

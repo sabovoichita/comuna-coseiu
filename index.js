@@ -47,31 +47,25 @@ function createMainLayout() {
       </div>
 
       <div id="producatori" class="page">
-        <h1>Producatori locali</h1>
+       
       </div>
 
       <div id="evenimente" class="page">
-        <h1>Evenimente</h1>
       </div>
 
       <div id="cazare" class="page">
-        <h1>Cazare</h1>
       </div>
 
       <div id="transport" class="page">
-        <h1>Transport</h1>
       </div>
 
       <div id="institutii" class="page">
-        <h1>Institutii</h1>
       </div>
 
       <div id="magazine" class="page">
-        <h1>Magazine</h1>
       </div>
 
       <div id="galerie" class="page1">
-        <h1>Galerie</h1>
       </div>
     </div>
 `;
@@ -79,7 +73,7 @@ function createMainLayout() {
 
 function createDivIstorie() {
   return `
-  <div class="istorieContent">
+  <div class="content">
     <h1>Istoria Comunei</h1>
   <p>Coșeiu este o comună în județul Sălaj, Transilvania, România, formată din satele Archid, Chilioara și Coșeiu (reședința).</p>
   <p>Conform recensământului efectuat în 2021, populația comunei Coșeiu se ridică la 1.110 locuitori, în scădere față de recensământul anterior din 2011, când fuseseră înregistrați 1.198 de locuitori.</p>
@@ -93,7 +87,25 @@ function createDivIstorie() {
         <li><a href ="#" data-page ="istorie">Biserica reformată din Coșeiu</a></li>
         <li><a href ="#" data-page="producatori">Clopotnița bisericii din Coșeiu</a></li>
         <li><a href ="#" data-page="evenimente">Pădurea "Hegyes</a></li>
-        <li><a href ="#" data-page="cazare">Pivnitele</a></li>
+        <li><a href ="#" data-page="cazare">Pivnitele construite în vremea dacilor</a></li>
+        <li><a href ="#" data-page="cazare">Tunelul înfundat </a></li>
+      </ul>
+  </div>
+  
+  <div>
+  <ul class="istorie-menu-bar">
+        <li><a href ="#" data-page ="istorie"> Suprafață: 3432 ha</a></li>
+        <li><a href ="#" data-page="producatori">Intravilan: 212 ha</a></li>
+        <li><a href ="#" data-page="evenimente">Extravilan: 3220 ha</a></li>
+        <li><a href ="#" data-page="cazare">Populație: 1365</a></li>
+        <li><a href ="#" data-page ="istorie"> Gospodării: 805</a></li>
+        <li><a href ="#" data-page="producatori">Nr. locuințe: 705</a></li>
+        <li><a href ="#" data-page="evenimente">Nr. grădinițe: 3</a></li>
+        <li><a href ="#" data-page="cazare">Nr. școli: 3</a></li>
+        <li><a href ="#" data-page="cazare">Nr. capele: 1</a></li>
+        <li><a href ="#" data-page="cazare">Nr. biblioteci: 1?</a></li>
+        <li><a href ="#" data-page="cazare">Nr. cămine culturale: 1?</a></li>
+        <li><a href ="#" data-page="cazare">Nr. parcuri: 3?</a></li>
       </ul>
   </div>`;
 }
@@ -101,9 +113,98 @@ function insertDivIstorie() {
   $("#istorie").innerHTML = createDivIstorie();
 }
 
+function createDivProducatori() {
+  return `
+   <h1>Producatori</h1>
+  <div class="content">
+   <p>Produse locale</p>
+   <p>Palinca, vin, miere, cereale, concentrate,etc</p>
+
+   </div>
+  `;
+}
+function insertDivProducatori() {
+  $("#producatori").innerHTML = createDivProducatori();
+}
+
+function createDivEvenimente() {
+  return `
+   <h1>Evenimente</h1>
+  <div class="content">
+   <p>Evenimente locale</p>
+   <p>Zilele Coseiului</p>
+
+   </div>
+  `;
+}
+function insertDivEvenimente() {
+  $("#evenimente").innerHTML = createDivEvenimente();
+}
+
+function createDivCazare() {
+  return `
+   <h1>Cazare</h1>
+  <div class="content">
+   <p>Cazare locala</p>
+   <p>Casa Coseiu</p>
+
+   </div>
+  `;
+}
+function insertDivCazare() {
+  $("#cazare").innerHTML = createDivCazare();
+}
+
+function createDivTransport() {
+  return `
+   <h1>Transport</h1>
+  <div class="content">
+   <p>Autobuz-Cento</p>
+   <p>Taxiuri</p>
+
+   </div>
+  `;
+}
+function insertDivTrasport() {
+  $("#transport").innerHTML = createDivTransport();
+}
+
+function createDivInstitutii() {
+  return `
+   <h1>Institutii</h1>
+  <div class="content">
+   <p>Scoala</p>
+   <p>Gradinita???</p>
+   <p>Biblioteca</p>
+   <p>Biserica</p>
+   <p>Primaria</p>
+   </div>
+  `;
+}
+function insertDivInstitutii() {
+  $("#institutii").innerHTML = createDivInstitutii();
+}
+
+function createDivMagazine() {
+  return `
+   <h1>Magazine</h1>
+  <div class="content">
+   <p>ABC-Coseiu</p>
+   <p>ABC-Archid</p>
+   <p>ABC-Chilioara</p>
+   <p>Depozit Coseiu</p>
+   <p>Magazin Horvat</p>
+   </div>
+  `;
+}
+function insertDivMagazine() {
+  $("#magazine").innerHTML = createDivMagazine();
+}
+
 function createDivGalerie() {
   return `
-        <div class="slideshow-container">
+        <h1>Galerie</h1>
+    <div class="slideshow-container">
       <div class="mySlides fade">
         <div class="numbertext">1 / 6</div>
         <img src="images/1.jpg" />
@@ -196,7 +297,14 @@ function showSlides(n) {
 function initEvents() {
   const insertH1 = ($("body").innerHTML = createMainLayout());
   // console.log(insertH1);
+
   insertDivIstorie();
+  insertDivProducatori();
+  insertDivEvenimente();
+  insertDivCazare();
+  insertDivTrasport();
+  insertDivInstitutii();
+  insertDivMagazine();
   insertDivGalerie();
   showSlides(slideIndex);
 
