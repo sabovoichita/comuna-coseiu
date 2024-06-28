@@ -177,6 +177,14 @@ h2 {
 .page {
   display: none;
 }
+
+.istorieContent {
+  background-color: rgb(238, 208, 208);
+  display: block;
+  align-content: space-around;
+  padding: 5px;
+}
+
 .hide {
   display: none;
 }

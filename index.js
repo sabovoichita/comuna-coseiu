@@ -1,4 +1,4 @@
-let activePage = "galerie";
+let activePage = "istorie";
 
 function $(selector) {
   return document.querySelector(selector);
@@ -124,9 +124,29 @@ function createMainLayout() {
         <span class="dot" onclick="currentSlide(6)"></span>
         </div>
       </div>
-
-
 `;
+}
+
+function createDivIstorie() {
+  return `
+  <div class="istorieContent">
+  <p>Coșeiu este o comună în județul Sălaj, Transilvania, România, formată din satele Archid, Chilioara și Coșeiu (reședința).</p>
+  <p>Conform recensământului efectuat în 2021, populația comunei Coșeiu se ridică la 1.110 locuitori, în scădere față de recensământul anterior din 2011, când fuseseră înregistrați 1.198 de locuitori.</p>
+  <p> Majoritatea locuitorilor sunt maghiari (50,63%), cu minorități de români (40,09%) și romi (4,59%), iar pentru 4,68% nu se cunoaște apartenența etnică.[3] Din punct de vedere confesional, cei mai mulți locuitori sunt ortodocși (36,31%), cu minorități de reformați (34,14%), baptiști (16,76%) și greco-catolici (5,5%), iar pentru 5,41% nu se cunoaște apartenența confesională.</p>
+  </div>
+  
+  <div>
+  <h3>Atracții turistice</h3>
+      <ul class="istorie-menu-bar">
+        <li><a href ="#" data-page ="istorie">Biserica reformată din Coșeiu</a></li>
+        <li><a href ="#" data-page="producatori">Clopotnița bisericii din Coșeiu</a></li>
+        <li><a href ="#" data-page="evenimente">Pădurea "Hegyes</a></li>
+        <li><a href ="#" data-page="cazare">Pivnitele</a></li>
+      </ul>
+  </div>`;
+}
+function insertDivIstorie() {
+  $("#istorie").innerHTML = createDivIstorie();
 }
 
 let slideIndex = 1;
@@ -164,6 +184,7 @@ function showSlides(n) {
 function initEvents() {
   const insertH1 = ($("body").innerHTML = createMainLayout());
   console.log(insertH1);
+  insertDivIstorie();
   showSlides(slideIndex);
 
   document
@@ -175,8 +196,6 @@ function initEvents() {
         showPage(id);
       }
     });
-
-  // showPage(id);
 }
 
 initEvents();
