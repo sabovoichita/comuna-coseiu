@@ -31,36 +31,36 @@ function createMainLayout() {
 
   <div class="mySlides fade" >
     <div class="numbertext">1 / 6</div>
-     <img src="images/20190110_084654a.jpg" >
+     <img src="images/1.jpg" >
     <div class="text">Coseiu iarna</div>
   </div>
   <div class="mySlides fade" >
     <div class="numbertext">2 / 6</div>
-    <img src="images/20190106_120941.jpg"  >
+    <img src="images/2.jpg"  >
     <div class="text">Coseiu iarna</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 6</div>
-    <img src="images/20181221_093455.jpg" >
+    <img src="images/3.jpg" >
     <div class="text">Coseiu iarna</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">4 / 6</div>
-    <img src="images/20190111_082942a.jpg" >
+    <img src="images/4.jpg" >
     <div class="text">Coseiu iarna</div>
   </div>
 
    <div class="mySlides fade">
     <div class="numbertext">5 / 6</div>
-    <img src="images/20190110_084701a.jpg" >
+    <img src="images/5.jpg" >
     <div class="text">Coseiu iarna</div>
   </div>
    
    <div class="mySlides fade">
     <div class="numbertext">6 / 6</div>
-   <img src="images/20210803_085701.jpg" >
+   <img src="images/6.jpg" >
     <div class="text">Coseiu toamna</div>
   </div>
 

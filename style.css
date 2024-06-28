@@ -196,7 +196,7 @@ h2 {
   max-height: 500px;
   position: relative;
   margin: auto;
-  overflow: auto;
+  overflow: hidden;
 }
 
 /* Hide the images by default */
