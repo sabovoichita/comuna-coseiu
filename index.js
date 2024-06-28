@@ -1,5 +1,19 @@
+let activePage = "galerie";
+
 function $(selector) {
   return document.querySelector(selector);
+}
+function hide(id) {
+  $("#" + id).style.display = "none";
+}
+function show(id) {
+  $("#" + id).style.display = "block";
+}
+
+function showPage(id) {
+  hide(activePage);
+  show(id);
+  activePage = id;
 }
 
 function createMainLayout() {
@@ -16,69 +30,102 @@ function createMainLayout() {
     </div>
      <div class="menu-bar">
         <ul class="header-top-menu-bar">
-        <li><a href ="#">Istorie</a></li>
-        <li><a href ="#">Producatori</a></li>
-        <li><a href ="#">Evenimente</a></li>
-        <li><a href ="#">Cazare</a></li>
-        <li><a href ="#">Transport</a></li>
-        <li><a href ="#">Institutii</a></li>
-        <li><a href ="#">Magazine</a></li>
-        <li><a href ="#">Galerie</a></li> 
+        <li><a href ="#" data-page = "istorie">Istorie</a></li>
+        <li><a href ="#" data-page="producatori">Producatori</a></li>
+        <li><a href ="#" data-page="evenimente">Evenimente</a></li>
+        <li><a href ="#" data-page="cazare">Cazare</a></li>
+        <li><a href ="#" data-page="transport">Transport</a></li>
+        <li><a href ="#" data-page="institutii">Institutii</a></li>
+        <li><a href ="#" data-page="magazine">Magazine</a></li>
+        <li><a href ="#" data-page="galerie">Galerie</a></li> 
         </ul>
       </div>
 
-<div class="slideshow-container" >
+       <div id="istorie" class="page">
+          <h1>Istoria Comunei</h1>
+        </div>
 
-  <div class="mySlides fade" >
-    <div class="numbertext">1 / 6</div>
-     <img src="images/1.jpg" >
-    <div class="text">Coseiu iarna</div>
-  </div>
-  <div class="mySlides fade" >
-    <div class="numbertext">2 / 6</div>
-    <img src="images/2.jpg"  >
-    <div class="text">Coseiu iarna</div>
-  </div>
+      <div id="producatori" class="page">
+          <h1>Producatori locali</h1>
+        </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 6</div>
-    <img src="images/3.jpg" >
-    <div class="text">Coseiu iarna</div>
-  </div>
+        <div id="evenimente" class="page">
+          <h1>Evenimente</h1>
+        </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 6</div>
-    <img src="images/4.jpg" >
-    <div class="text">Coseiu iarna</div>
-  </div>
+        <div id="cazare" class="page">
+          <h1>Cazare</h1>
+        </div>
 
-   <div class="mySlides fade">
-    <div class="numbertext">5 / 6</div>
-    <img src="images/5.jpg" >
-    <div class="text">Coseiu iarna</div>
-  </div>
-   
-   <div class="mySlides fade">
-    <div class="numbertext">6 / 6</div>
-   <img src="images/6.jpg" >
-    <div class="text">Coseiu toamna</div>
-  </div>
+        <div id="transport" class="page">
+          <h1>Transport</h1>
+        </div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+        <div id="institutii" class="page">
+          <h1>Institutii</h1>
+        </div>
 
-<!-- The dots/circles -->
-<div class="dots" style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-</div>
+        <div id="magazine" class="page">
+          <h1>Magazine</h1>
+        </div>
+
+      <div id="galerie" class="page1">
+      <h1>Galerie</h1>
+      <div class="slideshow-container" >
+
+      <div class="mySlides fade" >
+          <div class="numbertext">1 / 6</div>
+            <img src="images/1.jpg" >
+          <div class="text">Coseiu iarna</div>
+        </div>
+        <div class="mySlides fade" >
+          <div class="numbertext">2 / 6</div>
+          <img src="images/2.jpg"  >
+          <div class="text">Coseiu iarna</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="images/3.jpg" >
+          <div class="text">Coseiu iarna</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img src="images/4.jpg" >
+          <div class="text">Coseiu iarna</div>
+        </div>
+
+          <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/5.jpg" >
+          <div class="text">Coseiu iarna</div>
+        </div>
+          
+          <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img src="images/6.jpg" >
+          <div class="text">Coseiu toamna</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+      </div>
+
+
 `;
 }
 
@@ -115,9 +162,21 @@ function showSlides(n) {
 }
 
 function initEvents() {
-  console.log("here");
   const insertH1 = ($("body").innerHTML = createMainLayout());
   console.log(insertH1);
   showSlides(slideIndex);
+
+  document
+    .querySelector(".header-top-menu-bar")
+    .addEventListener("click", function (e) {
+      var id = e.target.dataset.page;
+      console.info("click on menu-bar", id);
+      if (id) {
+        showPage(id);
+      }
+    });
+
+  // showPage(id);
 }
+
 initEvents();

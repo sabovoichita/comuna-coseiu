@@ -173,6 +173,10 @@ h2 {
   color: var(--option1);
   background: var(--option5);
 }
+
+.page {
+  display: none;
+}
 .hide {
   display: none;
 }
