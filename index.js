@@ -16,13 +16,13 @@ function createMainLayout() {
     </div>
      <div class="menu-bar">
         <ul class="header-top-menu-bar">
-        <li><a href ="#">Istorie</a></li> |
-        <li><a href ="#">Producatori</a></li> |
-        <li><a href ="#">Evenimente</a></li> |
-        <li><a href ="#">Cazare</a></li> |
-        <li><a href ="#">Transport</a></li> |
-        <li><a href ="#">Institutii</a></li> |
-        <li><a href ="#">Magazine</a></li> |
+        <li><a href ="#">Istorie</a></li>
+        <li><a href ="#">Producatori</a></li>
+        <li><a href ="#">Evenimente</a></li>
+        <li><a href ="#">Cazare</a></li>
+        <li><a href ="#">Transport</a></li>
+        <li><a href ="#">Institutii</a></li>
+        <li><a href ="#">Magazine</a></li>
         <li><a href ="#">Galerie</a></li> 
         </ul>
       </div>
